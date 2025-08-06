@@ -1,0 +1,17 @@
+.s-portfolio {
+  &__content {
+    font-weight: 500;
+    margin: 0px 0px 32px 0px;
+  }
+  &__slider {
+    margin-top: 32px;
+  }
+  &__btn {
+    width: 420px;
+    max-width: 100%;
+    margin: 40px auto 0px auto;
+    @include tablet {
+      margin-top: 32px;
+    }
+  }
+}

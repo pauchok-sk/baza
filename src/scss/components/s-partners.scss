@@ -1,0 +1,17 @@
+.s-partners {
+  overflow: hidden;
+  padding: 16px 0px;
+  border-bottom: 1px solid rgba(31, 25, 13, 0.33);
+  &__slider {
+    overflow: visible;
+  }
+  &__slide {
+    @include laptop-middle {
+      width: 205px !important;
+    }
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

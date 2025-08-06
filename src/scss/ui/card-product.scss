@@ -1,0 +1,67 @@
+.card-product {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--gray);
+  &__adv {
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    right: 16px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    li {
+      border: 1px solid white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      color: white;
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1.13;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+  &__body {
+    padding: 24px 16px;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    margin: 0px 0px 16px 0px;
+  }
+  &__content {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0px 0px 24px 0px;
+  }
+  &__spec {
+    display: flex;
+    gap: 24px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 16px;
+      line-height: 150%;
+
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          height: 24px;
+          width: 1px;
+          background-color: currentColor;
+        }
+      }
+    }
+  }
+}

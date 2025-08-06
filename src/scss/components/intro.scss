@@ -1,0 +1,128 @@
+.intro {
+  position: relative;
+  z-index: 1;
+  padding: 160px 0px 70px 0px;
+  color: var(--white);
+
+  @include laptop-min {
+    padding: 125px 0px 56px 0px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: black;
+    opacity: 0.55;
+    z-index: -1;
+    @include tablet {
+      opacity: 0.6
+    }
+  }
+  &__wrapper {
+    @include flex-between;
+    gap: 30px;
+    @include laptop-min {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__main {
+    max-width: 680px;
+    @include laptop-min {
+      max-width: none;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 111%;
+    margin: 0px 0px 24px 0px;
+
+    @include laptop {
+      font-size: 64px;
+    }
+    @include laptop-middle {
+      font-size: 48px;
+    }
+
+    @include tablet {
+      font-size: 32px;
+      line-height: 125%;
+      margin-bottom: 16px;
+    }
+  }
+  &__content {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    margin: 0px 0px 32px 0px;
+  }
+  &__adv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-top: 1px solid var(--white);
+    padding-top: 32px;
+  }
+  &__adv-item {
+    display: flex;
+    gap: 8px;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+  &__num {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 80%;
+    @include tablet {
+      font-size: 24px;
+      line-height: 100%;
+    }
+  }
+  &__adv-content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    @include tablet {
+      line-height: 125%;
+    }
+  }
+  &__form-wrapper {
+    padding: 24px;
+    width: 470px;
+    max-width: 100%;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: var(--white);
+    color: var(--black);
+
+    @include tablet {
+      padding: 24px 16px;
+    }
+  }
+  &__form-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    margin: 0px 0px 32px 0px;
+    @include tablet {
+      margin-bottom: 8px;
+    }
+  }
+  &__form-content {
+    font-size: 15px;
+    line-height: 133%;
+    margin: 0px 0px 32px 0px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__form-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.input-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  svg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+
+    & + input {
+      padding-left: 56px;
+    }
+  }
+}
+
+.input {
+  padding: 19px 16px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  outline: none;
+  width: 100%;
+  border-radius: 2px;
+
+  font-size: 16px;
+  line-height: 150%;
+
+  transition: box-shadow .3s ease, background-color .3s ease, border-color .3s ease;
+
+  &:focus {
+    background-color: white;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+    border-color: white;
+  }
+}
+textarea.input {
+  resize: none;
+}

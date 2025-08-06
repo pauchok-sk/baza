@@ -1,0 +1,33 @@
+.body-hidden {
+  overflow: hidden;
+  touch-action: none;
+}
+.content {
+  font-size: 16px;
+  line-height: 150%;
+
+  margin: 0;
+
+  @include tablet {
+    font-size: 15px;
+    line-height: 147%;
+  }
+
+  &._semibold {
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.sect-m {
+  margin: 64px 0px;
+  @include laptop-min {
+    margin: 56px 0px;
+  }
+}
