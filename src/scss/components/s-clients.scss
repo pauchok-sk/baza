@@ -1,0 +1,44 @@
+.s-clients {
+  &__slide {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    aspect-ratio: 1/0.65;
+    box-sizing: border-box;
+    border-radius: 4px;
+    overflow: hidden;
+    color: var(--white);
+    z-index: 1;
+
+    @include hover {
+      .s-clients__slide-content {
+        opacity: 1;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background-color: black;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .btn-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__slide-content {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    opacity: 0;
+
+    transition: opacity .3s ease;
+  }
+}

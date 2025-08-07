@@ -1,0 +1,16 @@
+.modal {
+  display: none;
+  padding: 30px;
+  background-color: var(--white);
+  color: var(--black);
+  @include tablet {
+    padding: 30px 16px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+  }
+}

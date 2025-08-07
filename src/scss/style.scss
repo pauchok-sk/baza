@@ -12,12 +12,14 @@
 @import "./ui/lang-toggle";
 @import "./ui/form";
 @import "./ui/title";
+@import "./ui/tab";
 @import "./ui/categories";
 @import "./ui/card-product";
 @import "./ui/slider";
 
 // widgets
 @import "./widgets/burger";
+@import "./widgets/modal";
 
 // components
 @import "./components/header";
@@ -27,5 +29,12 @@
 @import "./components/s-about";
 @import "./components/s-portfolio";
 @import "./components/s-services";
+@import "./components/s-offer";
+@import "./components/s-clients";
+@import "./components/s-quiz";
+@import "./components/s-gallery";
+@import "./components/s-reviews";
+@import "./components/s-faq";
+@import "./components/s-connect";
 
 @import "./components/footer";

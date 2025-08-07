@@ -1,0 +1,49 @@
+.s-offer {
+  @include tablet {
+    .container {
+      padding: 0;
+    }
+  }
+  &__body {
+    position: relative;
+    padding: 72px 56px;
+    z-index: 1;
+    color: var(--white);
+
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+      z-index: -1;
+    }
+
+    @include tablet {
+      padding: 40px 20px;
+    }
+  }
+  &__inside {
+    max-width: 675px;
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
+  &__timer {
+    margin: 24px 0px 40px 0px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: var(--primary);
+    @include tablet {
+      font-size: 48px;
+    }
+  }
+  &__btn {
+    width: 420px;
+    max-width: 100%;
+  }
+}

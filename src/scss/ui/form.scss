@@ -8,6 +8,7 @@
     width: 24px;
     height: 24px;
     left: 16px;
+    color: var(--black);
 
     & + input {
       padding-left: 56px;
@@ -36,4 +37,43 @@
 }
 textarea.input {
   resize: none;
+}
+
+.input-check {
+  display: none;
+  &:checked + label {
+    &::before {
+      background: url('@img/check.svg') center / 85% auto no-repeat;
+      background-color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+}
+
+.label-check {
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+  gap: 10px;
+
+  font-size: 16px;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid currentColor;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 4px;
+
+    transition: background-color .3s ease, border-color .3s ease;
+  }
+
+  a {
+    text-decoration: underline;
+    @include hover {
+      text-decoration: none;
+    }
+  }
 }

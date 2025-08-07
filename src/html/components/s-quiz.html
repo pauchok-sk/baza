@@ -1,0 +1,166 @@
+<section class="s-quiz" id="s-quiz">
+  <div class="container">
+    <h2 class="s-title">Мы поможем Вам с кухней вашей мечты</h2>
+    <p class="s-quiz__content content _medium">
+      Рассчитайте стоимость вашей будущей кухни за несколько минут. Наш
+      калькулятор поможет определить ориентировочную цену с учетом всех ваших
+      предпочтений.
+    </p>
+  </div>
+  <form class="s-quiz__form" id="quiz">
+    <div class="s-quiz__question _active" style="opacity: 1">
+      <div class="container">
+        <h3 class="s-title s-quiz__question-title">1. Тип кухни</h3>
+        <div class="s-quiz__grid">
+          <input
+            type="radio"
+            id="question-1"
+            name="Тип кухни"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-1" class="s-quiz__label">Прямая</label>
+
+          <input
+            type="radio"
+            id="question-2"
+            name="Тип кухни"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-2" class="s-quiz__label">Прямая</label>
+
+          <input
+            type="radio"
+            id="question-3"
+            name="Тип кухни"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-3" class="s-quiz__label">Прямая</label>
+        </div>
+      </div>
+    </div>
+    <div class="s-quiz__question">
+      <div class="container">
+        <h3 class="s-title s-quiz__question-title">2. Тип кухни</h3>
+        <div class="s-quiz__grid">
+          <input
+            type="radio"
+            id="question-11"
+            name="Тип кухни1"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-11" class="s-quiz__label">Прямая</label>
+
+          <input
+            type="radio"
+            id="question-21"
+            name="Тип кухни1"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-21" class="s-quiz__label">Прямая</label>
+
+          <input
+            type="radio"
+            id="question-31"
+            name="Тип кухни1"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-31" class="s-quiz__label">Прямая</label>
+        </div>
+      </div>
+    </div>
+    <div class="s-quiz__question">
+      <div class="container">
+        <h3 class="s-title s-quiz__question-title">3. Тип кухни</h3>
+        <div class="s-quiz__grid">
+          <input
+            type="radio"
+            id="question-113"
+            name="Тип кухни13"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-113" class="s-quiz__label">Прямая</label>
+
+          <input
+            type="radio"
+            id="question-213"
+            name="Тип кухни13"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-213" class="s-quiz__label">Прямая</label>
+
+          <input
+            type="radio"
+            id="question-313"
+            name="Тип кухни13"
+            value="Прямая"
+            class="s-quiz__input"
+          />
+          <label for="question-313" class="s-quiz__label">Прямая</label>
+        </div>
+      </div>
+    </div>
+    <div class="s-quiz__profile" id="quiz-profile">
+      <div class="container">
+        <h3 class="s-title s-quiz__question-title">Заполните данные</h3>
+        <div action="#" class="s-quiz__form-grid">
+          <div class="input-control">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-profile"></use>
+            </svg>
+            <input type="text" placeholder="Ваше имя" class="input" />
+          </div>
+          <div class="input-control">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+            </svg>
+            <input type="tel" placeholder="Номер телефона" class="input" />
+          </div>
+          <div class="input-control">
+            <textarea
+              placeholder="Ваш вопрос"
+              rows="3"
+              class="input"
+            ></textarea>
+          </div>
+          <button class="btn-s intro__form-btn">Отправить</button>
+          <input type="checkbox" id="quiz-policy" class="input-check" />
+          <label for="quiz-policy" class="label-check">
+            <span>
+              Согласен с условиями
+              <a href="#" target="_blank">Политики конфиденциальности</a>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="quiz-container-nav">
+      <div class="s-quiz__question-nav">
+        <div class="btn-s s-quiz__btn-nav _outline" id="quiz-prev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-line-prev"></use>
+          </svg>
+          <span>Назад</span>
+        </div>
+        <div class="s-quiz__pagination" id="quiz-pagination"></div>
+        <div
+          class="btn-s s-quiz__btn-nav"
+          data-text-end="Завершить"
+          id="quiz-next"
+        >
+          <span>Следующий вопрос</span>
+          <svg>
+            <use xlink:href="img/icons/icons.svg#icon-arrow-line-next"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </form>
+</section>

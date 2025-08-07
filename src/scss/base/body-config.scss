@@ -13,7 +13,7 @@
     line-height: 147%;
   }
 
-  &._semibold {
+  &._medium {
     font-weight: 500;
   }
 
@@ -30,4 +30,15 @@
   @include laptop-min {
     margin: 56px 0px;
   }
+}
+.sect-p {
+  padding: 64px 0px;
+  @include laptop-min {
+    padding: 56px 0px;
+  }
+}
+
+.sect-head {
+  @include flex-between;
+  margin-bottom: 32px;
 }

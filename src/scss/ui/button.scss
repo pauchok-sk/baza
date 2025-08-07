@@ -9,18 +9,20 @@
 
 .btn-s {
   @include flex-center;
+  gap: 16px;
   cursor: pointer;
   outline: none;
   padding: 19px 30px;
   border: 1px solid var(--primary);
   background-color: var(--primary);
-  border: none;
   outline: none;
   width: fit-content;
+  border-radius: 4px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
+  color: var(--black);
 
   transition:
     background-color 0.3s ease,
@@ -29,5 +31,41 @@
 
   @include hover {
     background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  &._outline {
+    background-color: transparent;
+    color: var(--primary);
+
+    @include hover {
+      background-color: var(--primary-hover);
+      color: var(--black);
+    }
+  }
+}
+
+.btn-play {
+  @include flex-center;
+  border-radius: 50%;
+  background-color: white;
+  width: 72px;
+  height: 72px;
+  color: var(--black);
+
+  transition: background-color 0.3s ease;
+
+  @include hover {
+    background-color: var(--primary);
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
   }
 }

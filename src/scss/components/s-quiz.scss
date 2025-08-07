@@ -1,0 +1,129 @@
+.s-quiz {
+  &__content {
+    max-width: 885px;
+  }
+  &__form {
+    margin-top: 32px;
+    padding: 40px 0px;
+    background: #575247;
+    color: var(--white);
+  }
+  &__question {
+    opacity: 0;
+    display: none;
+    transition: opacity 0.4s ease;
+    &._active {
+      display: block;
+    }
+  }
+  &__question-title {
+    margin-bottom: 40px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    row-gap: 24px;
+
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__input {
+    display: none;
+    &:checked + label {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  }
+  &__label {
+    display: block;
+    cursor: pointer;
+    padding: 19px 23px;
+    border-radius: 4px;
+    border: 1px solid var(--white);
+
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+    @include hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  }
+
+  &__question-nav {
+    @include flex-between;
+    gap: 20px;
+    padding-top: 64px;
+    @include laptop-min {
+      padding-top: 40px;
+    }
+    @include tablet-min {
+      flex-wrap: wrap
+    }
+  }
+  &__pagination {
+    @include flex-center;
+    gap: 20px;
+    @include laptop-middle {
+      gap: 16px;
+    }
+    @include laptop-min {
+      display: none;
+    }
+    div {
+      cursor: pointer;
+      background-color: var(--primary);
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      opacity: 0.4;
+
+      transition: opacity .3s ease;
+
+      @include hover {
+        opacity: 1;
+      }
+      @include laptop-middle {
+        width: 18px;
+        height: 18px;
+      }
+
+      &._active {
+        opacity: 1;
+      }
+    }
+  }
+  &__btn-nav {
+    width: 280px;
+    max-width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+
+    @include tablet-min {
+      width: 100%;
+    }
+  }
+  &__profile {
+    opacity: 0;
+    display: none;
+    transition: opacity .4s ease;
+    .container {
+      width: 600px;
+    }
+
+    &._active {
+      display: block;
+    }
+  }
+  &__form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
