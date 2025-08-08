@@ -23,8 +23,37 @@
             Напишите нам, и мы свяжемся с вами
           </p>
         </div>
+        <form action="#" class="s-connect__form">
+          <div class="input-control">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-profile"></use>
+            </svg>
+            <input type="text" placeholder="Ваше имя" class="input" />
+          </div>
+          <div class="input-control">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+            </svg>
+            <input type="tel" placeholder="Номер телефона" class="input" />
+          </div>
+          <div class="input-control">
+            <textarea
+              placeholder="Ваш вопрос"
+              rows="3"
+              class="input"
+            ></textarea>
+          </div>
+          <button class="btn-s s-connect__form-btn">Отправить</button>
+          <input type="checkbox" id="s-connect-policy" class="input-check" />
+          <label for="s-connect-policy" class="label-check">
+            <span>
+              Согласен с условиями
+              <a href="#" target="_blank">Политики конфиденциальности</a>
+            </span>
+          </label>
+        </form>
       </div>
-      <img src="@img/connect.jpg" alt="image" class="s-connect__img">
+      <img data-da=".s-connect__main, 991, 2" src="@img/connect.jpg" alt="image" class="s-connect__img" />
     </div>
   </div>
 </section>

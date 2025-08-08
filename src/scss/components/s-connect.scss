@@ -1,20 +1,121 @@
 .s-connect {
+  background-color: #575247;
+  color: var(--white);
+  &._white {
+    background-color: var(--white);
+    color: var(--black);
+
+    .s-connect__btn {
+      border-color: rgba(31, 25, 13, 0.33);
+      @include hover {
+        background-color: var(--black);
+        color: white;
+      }
+
+      @include laptop-min {
+        color: var(--black) !important;
+      }
+    }
+  }
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    @include laptop-min {
+      display: block;
+    }
   }
   &__main {
+    display: flex;
+    flex-direction: column;
   }
   &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    row-gap: 24px;
+    margin-bottom: 24px;
+    @include laptop-min {
+      gap: 16px;
+      margin-bottom: 0;
+    }
   }
   &__btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 4px;
+
+    font-size: 16px;
+    line-height: 150%;
+
+    transition:
+      color 0.3s ease,
+      background-color 0.3s ease;
+
+    @include hover {
+      color: var(--black);
+      background-color: var(--white);
+    }
+
+    @include laptop-min {
+      padding: 0;
+      border: none;
+      color: var(--white) !important;
+      background-color: transparent !important;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
   }
   &__form-wrapper {
+    margin-top: auto;
   }
   &__form-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    margin: 0px 0px 8px 0px;
   }
   &__form-content {
+    margin-bottom: 32px;
   }
   &__img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    aspect-ratio: 1/0.8;
+    @include laptop-min {
+      margin: 32px 0px;
+    }
+    @include mobile {
+      aspect-ratio: 1/0.9;
+    }
+  }
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+
+    .input-control {
+      &:nth-child(3) {
+        grid-column: 2 span;
+      }
+      @include tablet {
+        grid-column: 2 span;
+      }
+    }
+    .label-check {
+      grid-column: 2 span;
+    }
+  }
+  &__form-btn {
+    grid-column: 2 span;
+    width: 100%;
   }
 }

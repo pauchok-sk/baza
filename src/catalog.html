@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+  @@include('html/head.html',{ "title":"pauchoo0k" })
+  <body class="body">
+    @@include('html/components/header.html')
+    <main>
+      <section
+        class="intro"
+        style="
+          background: url(&quot;@img/intro-bg.jpg&quot;) center / cover
+            no-repeat;
+        "
+      >
+        <div class="container">
+          <div class="intro__wrapper">
+            <div class="intro__main">
+              <h1 class="intro__title">Узнай цену своей кухни</h1>
+              <p class="intro__content">
+                Закажи ценовое предложение вызвав мастера для замера, или пришли
+                нам эскиз кухни
+              </p>
+              <div class="intro__adv">
+                <div class="intro__adv-item">
+                  <div class="intro__num">15</div>
+                  <div class="intro__adv-content">
+                    лет
+                    <br />
+                    опыта
+                  </div>
+                </div>
+                <div class="intro__adv-item">
+                  <div class="intro__num">500+</div>
+                  <div class="intro__adv-content">
+                    Построенных
+                    <br />
+                    проектов
+                  </div>
+                </div>
+                <div class="intro__adv-item">
+                  <div class="intro__num">5</div>
+                  <div class="intro__adv-content">
+                    лет
+                    <br />
+                    гарантии
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intro__form-wrapper">
+              <h3 class="intro__form-title">Оставьте заявку</h3>
+              <p class="intro__form-content">
+                Напишите нам, и мы свяжемся с вами
+              </p>
+              <form action="#" class="intro__form">
+                <div class="input-control">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-profile"></use>
+                  </svg>
+                  <input type="text" placeholder="Ваше имя" class="input" />
+                </div>
+                <div class="input-control">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+                  </svg>
+                  <input
+                    type="tel"
+                    placeholder="Номер телефона"
+                    class="input"
+                  />
+                </div>
+                <div class="input-control">
+                  <textarea
+                    placeholder="Ваш вопрос"
+                    rows="3"
+                    class="input"
+                  ></textarea>
+                </div>
+                <button class="btn-s intro__form-btn">Отправить</button>
+                <input
+                  type="checkbox"
+                  id="connect-policy"
+                  class="input-check"
+                />
+                <label for="connect-policy" class="label-check">
+                  <span>
+                    Согласен с условиями
+                    <a href="#" target="_blank">Политики конфиденциальности</a>
+                  </span>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-portfolio sect-m">
+        <div class="container tabs">
+          <h2 class="s-title">Кухни</h2>
+          <div class="content s-portfolio__content">
+            Для подсчета стоимости вашей кухни нам необходимо замерить
+            помещениие. Также можно записатся на замер по нр. тел. 25564883. В
+            случае если у вас уже имеется эскиз кухни, мы сделаем ценовое
+            предложение без замера.
+          </div>
+          <ul class="list categories-list">
+            <li>
+              <a href="#" class="categories-btn _active">Все</a>
+            </li>
+            <li>
+              <a href="#" class="categories-btn">Кухни</a>
+            </li>
+            <li>
+              <a href="#" class="categories-btn">Шкафы</a>
+            </li>
+            <li>
+              <a href="#" class="categories-btn">Ванные</a>
+            </li>
+            <li><a href="#" class="categories-btn">Офис</a></li>
+          </ul>
+          <div class="s-portfolio__grid">
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-product">
+              <ul class="list card-product__adv">
+                <li>Минимализм</li>
+                <li>LED-подсветка</li>
+              </ul>
+              <img
+                src="@img/product.jpg"
+                alt="image"
+                class="card-product__img"
+              />
+              <div class="card-product__body">
+                <h5 class="card-product__title">Встроенная мебель</h5>
+                <p class="card-product__content">
+                  Шкафы с зеркальными фасадами
+                </p>
+                <ul class="list card-product__spec">
+                  <li>8 м²</li>
+                  <li>2 недели</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-connect sect-m _white">
+        <div class="container">
+          <div class="s-connect__wrapper">
+            <div class="s-connect__main">
+              <h2 class="s-title s-connect__title">Остались вопросы?</h2>
+              <div class="s-connect__buttons">
+                <a href="tel:+37129644485" class="s-connect__btn">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+                  </svg>
+                  <span>+371 29644485</span>
+                </a>
+                <a href="mailto:nfo@baza-d.lv" class="s-connect__btn">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-mail"></use>
+                  </svg>
+                  <span>nfo@baza-d.lv</span>
+                </a>
+              </div>
+              <div class="s-connect__form-wrapper">
+                <h3 class="s-connect__form-title">Оставьте заявку</h3>
+                <p class="content s-connect__form-content">
+                  Напишите нам, и мы свяжемся с вами
+                </p>
+              </div>
+              <form action="#" class="s-connect__form">
+                <div class="input-control">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-profile"></use>
+                  </svg>
+                  <input type="text" placeholder="Ваше имя" class="input" />
+                </div>
+                <div class="input-control">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#icon-tel"></use>
+                  </svg>
+                  <input
+                    type="tel"
+                    placeholder="Номер телефона"
+                    class="input"
+                  />
+                </div>
+                <div class="input-control">
+                  <textarea
+                    placeholder="Ваш вопрос"
+                    rows="3"
+                    class="input"
+                  ></textarea>
+                </div>
+                <button class="btn-s s-connect__form-btn">Отправить</button>
+                <input
+                  type="checkbox"
+                  id="s-connect-policy"
+                  class="input-check"
+                />
+                <label for="s-connect-policy" class="label-check">
+                  <span>
+                    Согласен с условиями
+                    <a href="#" target="_blank">Политики конфиденциальности</a>
+                  </span>
+                </label>
+              </form>
+            </div>
+            <img
+              data-da=".s-connect__main, 991, 2"
+              src="@img/connect.jpg"
+              alt="image"
+              class="s-connect__img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/components/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

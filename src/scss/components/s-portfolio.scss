@@ -2,6 +2,7 @@
   &__content {
     font-weight: 500;
     margin: 0px 0px 32px 0px;
+    max-width: 800px;
   }
   &__slider {
     margin-top: 32px;
@@ -12,6 +13,18 @@
     margin: 40px auto 0px auto;
     @include tablet {
       margin-top: 32px;
+    }
+  }
+  &__grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    @include laptop-min {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 644px) {
+      grid-template-columns: 1fr;
     }
   }
 }
